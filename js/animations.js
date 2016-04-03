@@ -81,6 +81,10 @@ $(document).ready( function(){
 
     });
 
+    $(document).on('click', '.tweet', function(){
+        $(this).find('.stats').toggle();
+    });
+
 
 
 
