@@ -12,7 +12,7 @@
 				<div id="profile-summary">
 					<div class="content">
 						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<p>Johnny McFuddy</p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -27,7 +27,7 @@
 
 						<!-- STEP 3: As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
 						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
-						<div id="char-count">140</div>
+						<div id="char-count"></div>
 
 						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
 						<!-- HINT: javascript length method -->
@@ -40,11 +40,11 @@
 				<div id="stream">
 
 					<!-- STEP 5: When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
-					<!-- HINT: jQuery ".prepend" method -->
+					<!-- HINT: jQuery ".prepend" and .clone() methods -->
 					<div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/damenleeturks.jpg" />
-							<strong class="fullname">My BFF</strong>
+							<strong class="fullname">Taco Man</strong>
 							<span class="username">@mybff</span>
 
 							<!-- BLACK DIAMOND: Implement the icons for when a tweet is favorited/retweeted in the upper right of the tweet. -->
@@ -99,7 +99,7 @@
 					<div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/funwatercat.jpg" />
-							<strong class="fullname">The Onion</strong>
+							<strong class="fullname">Seymore Bihgbutz</strong>
 							<span class="username">@theonion</span>
 							<p class="tweet-text">“I'm able to speak confidently about a wide range of subjects, so it’s probably hard for most women to follow.” http://onion.com/1aWfKwf </p>
 							<div class="tweet-actions">
@@ -131,7 +131,7 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<textarea class="tweet-compose" placeholder="Reply to @theonion"/></textarea>
 							</div>
 						</div>
 					</div><!-- .tweet -->
@@ -171,12 +171,16 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<textarea class="tweet-compose" placeholder="Reply to @HarvardBiz"/></textarea>
 							</div>
 						</div>
 					</div><!-- .tweet -->
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/animations.js"></script>
+
 	</body>
 </html>
